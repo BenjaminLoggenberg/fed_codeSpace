@@ -6,9 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/frontendValidation/styles.css">
 </head>
 
 <body>
+
+    <h1>Form:</h1>
+    <form>
+        <label for="newTask">New Task:</label>
+        <input type="text" id="newTask" placeholder="Required and must contain no HTML characters" required>
+        <p>
+            <label for="taskDescription">Task Description:</label>
+            <input type="text" id="taskDescription" placeholder="Optional">
+        </p>
+        <label for="dueDate">Set Task Due Date:</label>
+        <input type="date" id="dueDate" required> <span class="placeholderText">Required. Must select a date</span>
+        <p>
+            <label for="dueTime">Set Task Due Time:</label>
+            <input type="time" id="dueTime" required> <span class="placeholderText">Required. Must select a time</span>
+        </p>
+        <button type="submit">submit</button>
+    </form>
 
 </body>
 

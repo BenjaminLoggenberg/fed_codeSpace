@@ -1,0 +1,12 @@
+ body {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     background-color: bisque;
+ }
+
+ ::placeholder {
+     color: red;
+ }
+
+ .placeholderText {
+     color: red;
+ }

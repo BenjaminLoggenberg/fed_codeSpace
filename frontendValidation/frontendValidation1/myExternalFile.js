@@ -1,17 +1,23 @@
 function myValidation() {
     let x = document.getElementById("newTask").value;
 
-    if (x.indexOf([">", "<"])) {
+    if (x.indexOf(">")) {
         document.getElementById("newTaskError").style.display = "block";
-    }
 
-    let myList = document.createElement("li");
+       else if (x.indexOf("<")) {
+            document.getElementById("newTaskError").style.display = "block";
 
-    let myListContent = document.createTextNode("newTask");
+            else (x) {
+                document.getElementById("newTaskError").style.display = "none";
+            }
 
-    let appendChildList = myList.appendChild("myListContent");
+        }
+        let myList = document.createElement("li");
 
-    let y = document.getElementById("myNewTaskList").appendChild("myList");
+        let myListContent = document.createTextNode("newTask");
 
-    console.log(myList);
-}
+        let appendChildList = myList.appendChild("myListContent");
+
+        let y = document.getElementById("myNewTaskList").appendChild("myList");
+
+        console.log(myList);

@@ -27,7 +27,11 @@
             <label for="dueTime">Set Task Due Time:</label>
             <input type="time" id="dueTime" required> <span class="placeholderText">Required. Must select a time</span>
         </p>
-        <button type="submit">submit</button>
+        <button onclick="myValidation()">submit</button>
+
+        <ul id="myNewTaskList">
+
+        </ul>
     </form>
 
 
@@ -35,17 +39,19 @@
 
         function myValidation() {
             let x = document.getElementById("newTask").value;
-            if (x.indexOf(">")) {
-                document.getElementById("newTaskError").style.display = "block";
-            }
 
-            else if (x.indexOf("<")) {
+            if (x.indexOf([">", "<"])) {
                 document.getElementById("newTaskError").style.display = "block";
             }
         }
 
+        let myList = document.createElement("li");
 
+        let myListContent = document.createTextNode(x);
 
+        let appendChildList = myList.appendChild(newTask);
+
+        let y = document.getElementById("myNewTaskList").appendChild("myList");
     </script>
 </body>
 

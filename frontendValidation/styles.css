@@ -10,3 +10,7 @@
  .placeholderText {
      color: red;
  }
+
+ #newTaskError {
+     display: none;
+ }

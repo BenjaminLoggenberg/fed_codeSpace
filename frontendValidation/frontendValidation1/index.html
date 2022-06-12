@@ -15,6 +15,8 @@
     <form>
         <label for="newTask">New Task:</label>
         <input type="text" id="newTask" placeholder="Required and must contain no HTML characters" required>
+
+        <p id="newTaskError">Please make sure your task contains no HTML characters</p>
         <p>
             <label for="taskDescription">Task Description:</label>
             <input type="text" id="taskDescription" placeholder="Optional">
@@ -28,6 +30,23 @@
         <button type="submit">submit</button>
     </form>
 
+
+    <script>
+
+        function myValidation() {
+            let x = document.getElementById("newTask").value;
+            if (x.indexOf(">")) {
+                document.getElementById("newTaskError").style.display = "block";
+            }
+
+            else if (x.indexOf("<")) {
+                document.getElementById("newTaskError").style.display = "block";
+            }
+        }
+
+
+
+    </script>
 </body>
 
 </html>

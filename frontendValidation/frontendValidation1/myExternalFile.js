@@ -1,24 +1,24 @@
 function myValidation() {
-    let x = document.getElementById("newTask").value;
+    const x = document.getElementById("newTask").value;
 
-    if (x.indexOf(">")) {
+    // why doesn't this work?? --->  if (x.includes([">", "<"])) {
+
+    if (x.includes(">")) {
         document.getElementById("newTaskError").style.display = "block";
+    }
+    else if (x.includes("<")) {
+        document.getElementById("newTaskError").style.display = "block";
+    }
+    event.preventDefault();
+}
 
-       else if (x.indexOf("<")) {
-            document.getElementById("newTaskError").style.display = "block";
+        //let myList = document.createElement("li");
 
-            else (x) {
-                document.getElementById("newTaskError").style.display = "none";
-            }
+        //let myListContent = document.createTextNode("newTask");
 
-        }
-        let myList = document.createElement("li");
+        // let appendChildList = myList.appendChild("myListContent");
 
-        let myListContent = document.createTextNode("newTask");
+        // let y = document.getElementById("myNewTaskList").appendChild("myList");
 
-        let appendChildList = myList.appendChild("myListContent");
-
-        let y = document.getElementById("myNewTaskList").appendChild("myList");
-
-        console.log(myList);
+       // console.log(myList);
 

@@ -22,6 +22,3 @@ function myValidation() {
 
         console.log(myList);
 
-        console.log(100 * 100);
-
-

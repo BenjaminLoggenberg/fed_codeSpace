@@ -21,3 +21,7 @@ function myValidation() {
         let y = document.getElementById("myNewTaskList").appendChild("myList");
 
         console.log(myList);
+
+        console.log(100 * 100);
+
+

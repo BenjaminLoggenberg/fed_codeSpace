@@ -13,13 +13,13 @@ function myValidation() {
     event.preventDefault();
 }
 
-        //let myList = document.createElement("li");
+let myList = document.createElement("li");
 
-        //let myListContent = document.createTextNode("newTask");
+let myListContent = document.createTextNode("newTask");
 
-        // let appendChildList = myList.appendChild("myListContent");
+let appendChildList = myList.appendChild("myListContent");
 
-        // let y = document.getElementById("myNewTaskList").appendChild("myList");
+let y = document.getElementById("myNewTaskList").appendChild("myList");
 
-       // console.log(myList);
+console.log(myList);
 

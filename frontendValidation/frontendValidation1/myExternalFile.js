@@ -9,6 +9,7 @@ function myValidation() {
     else if (x.includes("<")) {
         document.getElementById("newTaskError").style.display = "block";
     }
+
     event.preventDefault();
 }
 

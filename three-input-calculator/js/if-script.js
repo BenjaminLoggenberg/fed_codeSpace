@@ -3,7 +3,7 @@ let number2 = prompt("Please enter a second number:");
 let operator = prompt("Please enter an arithmetic operator:");
 
 function calculation() {
-    const answer = str.concat(number1 + ${ operator } + number2);
+    const answer = `${number1} + ${operator} + ${number2}`;
 
 }
 

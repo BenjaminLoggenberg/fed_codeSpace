@@ -1,51 +1,101 @@
-body{
+body {
     font-weight: 500;
+    background-color: #ef233c;
 }
 
-.calcDisplay{
+.calcDisplay {
     height: 100px;
     width: 435px;
     background-color: darkgrey;
     margin: auto;
 }
 
-.calc{
+.calc {
     width: 430px;
     margin: auto;
+    background-color: #ef233c;
 }
 
-.numbers{
+.numbers {
     display: inline-block;
     float: left;
     width: 327px;
 }
 
-.numbers button{
+.numbers button {
+    background-color: #2b2d42;
+    color: #edf2f4;
     width: 100px;
     height: 100px;
     margin: 3px;
 }
 
-.operators{
+.operators {
     display: inline-block;
     float: right;
     width: 100px;
 }
 
-.operators button{
+.operators button {
+    background-color: #2b2d42;
+    color: #edf2f4;
     width: 100px;
     height: 100px;
     display: inline-block;
     margin: 3px;
 }
 
-.equals{
+.equals {
     display: block;
     width: 220px;
     transform: translateX(-110px);
 }
 
-#equals{
-   width: 210px;
+#equals {
+    width: 210px;
     transform: translate(-110px, -106px);
+}
+
+
+# {
+    background-color: aqua;
+    color: black;
+}
+
+#eight {
+    background-color: aqua;
+    color: black;
+}
+
+#nine {
+    background-color: aqua;
+    color: black;
+}
+
+
+
+#two {
+    color: black;
+    background-color: aqua;
+}
+
+#three {
+    color: black;
+    background-color: aqua;
+}
+
+
+#five {
+    color: black;
+    background-color: aqua;
+}
+
+#six {
+    color: black;
+    background-color: aqua;
+}
+
+#equals {
+    color: black;
+    background-color: aqua;
 }

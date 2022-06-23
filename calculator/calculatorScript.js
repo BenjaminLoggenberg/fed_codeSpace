@@ -11,5 +11,3 @@ function buildExpression(value) {
 function calculate() {
     document.getElementById("display").value = eval(expression);
 }
-
-console.log(100)

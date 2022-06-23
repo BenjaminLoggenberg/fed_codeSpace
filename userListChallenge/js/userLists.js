@@ -9,11 +9,11 @@ switch (userInput) {
         let newUser2 = prompt("New user 2 name:");
         let newUser3 = prompt("New user 3 name:");
         userDatabase.push(newUser1, newUser2, newUser3);
-        console.log(userDatabase);
+        console.log(userDatabase);//working
         break;
 
     case '2': let removeUserName = prompt(`Which user index would you like to remove? \n ${userDatabase}`);
-        userDatabase.indexOf(removeUserName).slice(removeUserName); // help with this one
+        userDatabase.slice(removeUserName); // help with this one
         console.log(userDatabase);
         break;
 

@@ -13,7 +13,7 @@ switch (userInput) {
         break;
 
     case '2': let removeUserName = prompt(`Which user index would you like to remove? \n ${userDatabase}`);
-        userDatabase.filter(userDatabase => userDatabase != 'removeUserName'); // help with this one
+        userDatabase.filter(userDatabase => userDatabase !== 'removeUserName'); // help with this one
         console.log(userDatabase);
         break;
 

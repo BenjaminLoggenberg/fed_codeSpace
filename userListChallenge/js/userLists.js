@@ -14,7 +14,7 @@ switch (userInput) {
 
     case '2': let removeUserName = prompt(`Which user index would you like to remove? \n ${userDatabase}`);
         // removeUserName = removeUserName.value;
-        userDatabase.filter(userDatabase => userDatabase !== indexOf['removeUserName']);
+        userDatabase.filter(userDatabase => userDatabase !== userDatabase[removeUserName]);
 
         console.log(removeUserName);
         // userDatabase.filter(userDatabase => userDatabase !== 'removeUserName'); // help with this one

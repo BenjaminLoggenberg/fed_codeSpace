@@ -21,7 +21,7 @@ function logic() {
     // Use If to ensure input validation (ensure input fields are !empty)
     // Create pokemon object here (const pokemon) using user input Strings
 
-    if (name !== '' && type !== '' && region !== '') {
+    if (name != '' && type != '' && region != '') {
         const pokemon = {
             pokemonName: name,
             pokemonType: type,

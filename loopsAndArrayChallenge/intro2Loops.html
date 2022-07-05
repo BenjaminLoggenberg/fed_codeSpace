@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <h1>Hello World</h1>
     <script>
 
 
@@ -20,36 +20,63 @@
 
 
 
+        // let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
+
+        // for (x = 0; tasks.length > x; x++) { //HOW TO PRINT SEPARATED BY A SPACE??
+        //     console.log(tasks[x]);
+        // }
+
+
+        //Activity 2 - Edit the loop created above, to now calculate the sum of all the items leading up to 10. e.g. 1 + 2 + 3 = 6
+        //console.log your output
+        //Add your code below
+
+        // let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
+        // let sum = 0;
+        // for (x = 0; tasks.length >= x; x++) { //got it
+        //     sum = x + sum;
+        // }
+        // console.log(sum);
+
+        //Activity 3 - Using the tasks variable created above
+        //Create a loop that performs the 15 times table
+        //Leading up to the "length" of your tasks variable
+        //Add your code below
+
+        // let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
+        // const num1 = 15
+        // for (x = 0; tasks.length >= x; x++) { //got it
+        //     console.log(num1 * x);
+        // }
+
+        //Activity 4 - Edit your code in activity 3, by creating an array called timesTable
+        //And store each value of the your fifteen times table in it
+        //Add your code below
+
         let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
-
-        for (x = 0; x => tasks.length; x++) {
-            console.log(tasks[x])
+        let timesTable = []
+        const num1 = 15
+        for (x = 0; tasks.length >= x; x++) { //got it
+            let answer = num1 * x
+            timesTable.push(answer);
         }
+        console.log(timesTable);
+
+        //Activity 5 - Using the array you created in the Activity 4, loop through the array and print each value to the console.
+        //Add your code below
 
 
-//Activity 2 - Edit the loop created above, to now calculate the sum of all the items leading up to 10. e.g. 1 + 2 + 3 = 6
-//console.log your output
-//Add your code below
+        //Activty 6 - Use the .reduce() built-in method to calculate the average of the array created in Activity 4.
+        //Add your code below
 
-
-//Activity 3 - Using the tasks variable created above
-//Create a loop that performs the 15 times table
-//Leading up to the "length" of your tasks variable
-//Add your code below
-
-
-//Activity 4 - Edit your code in activity 3, by creating an array called timesTable
-//And store each value of the your fifteen times table in it
-//Add your code below
-
-
-//Activity 5 - Using the array you created in the Activity 4, loop through the array and print each value to the console.
-//Add your code below
-
-
-//Activty 6 - Use the .reduce() built-in method to calculate the average of the array created in Activity 4.
-//Add your code below
-
+        let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
+        let timesTable = []
+        const num1 = 15
+        for (x = 0; tasks.length >= x; x++) { //got it
+            let answer = num1 * x
+            timesTable.push(answer);
+        }
+        timesTable.reduce()
 
 //Bonus Activity
 //Repeat the output of what you produced in activity 6, this time by not using the .reduce function

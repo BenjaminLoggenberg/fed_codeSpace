@@ -12,7 +12,7 @@
     <script>
         //Below you shall find a tasks array which we will use for the rest of this challenge
         //One line below this is the tasksCompleted array that we are going to use further use
-        tasks = ['swim', 'eat', 'study', 'read', 'sleep', 'awake', 'breakfast', 'party', 'relax', 'exercise'];;
+        tasks = ['swim', 'eat', 'study', 'read', 'sleep', 'awake', 'breakfast', 'party', 'relax', 'exercise'];
         tasksCompleted = [true, false, true, true, false];
 
         //Activity 1 - Edit the tasksCompleted array by programmatically doing the following:
@@ -34,15 +34,15 @@
         //This function takes a parameter of arrayName.
         function displayArray(arrayName) {
             //Add your code below
-
-
-
+            for (x = 0; x < arrayName.length; x++) {
+                console.log(arrayName[x]);
+            }
         }
 
         //Activity 3 - Print the tasks array to the console by using the function you created in Activity 2
         //Add your code below
 
-
+        displayArray(tasks);
 
         //Activity 4 - Complete this function.
         //The purpose of this function is to calculate the sum of all the values in an array.

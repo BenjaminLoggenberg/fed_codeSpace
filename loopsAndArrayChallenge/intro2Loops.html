@@ -13,19 +13,19 @@
     <script>
 
 
-        //Activity 1 - Create a variable called "tasks" with an array of 10 task items e.g. let tasks = ['swim', 'study', 'eat']
-        //Using the "for" loop display the value of each of these items
-        //"console.log" the output, separated by a space
-        //Add your code below
+        // Activity 1 - Create a variable called "tasks" with an array of 10 task items e.g.let tasks = ['swim', 'study', 'eat']
+        // Using the "for" loop display the value of each of these items
+        // "console.log" the output, separated by a space
+        // Add your code below
 
 
 
-        // let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
-
-        // for (x = 0; tasks.length > x; x++) { //HOW TO PRINT SEPARATED BY A SPACE??
-        //     console.log(tasks[x]);
-        // }
-
+        let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
+        let stringVar = ""
+        for (x = 0; tasks.length > x; x++) { //HOW TO PRINT SEPARATED BY A SPACE??
+            stringVar += tasks[x] + " ";
+        }
+        console.log(stringVar);
 
         //Activity 2 - Edit the loop created above, to now calculate the sum of all the items leading up to 10. e.g. 1 + 2 + 3 = 6
         //console.log your output
@@ -69,14 +69,14 @@
         //Activty 6 - Use the .reduce() built-in method to calculate the average of the array created in Activity 4.
         //Add your code below
 
-        let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
-        let timesTable = []
-        const num1 = 15
-        for (x = 0; tasks.length >= x; x++) { //got it
-            let answer = num1 * x
-            timesTable.push(answer);
-        }
-        timesTable.reduce()
+        // let tasks = ['swim', 'study', 'eat', 'exercise', 'play', 'pray', 'socialize', 'jump', 'work', 'paint']
+        // let timesTable = []
+        // const num1 = 15
+        // for (x = 0; tasks.length >= x; x++) { //got it
+        //     let answer = num1 * x
+        //     timesTable.push(answer);
+        // }
+        // timesTable.reduce()
 
 //Bonus Activity
 //Repeat the output of what you produced in activity 6, this time by not using the .reduce function

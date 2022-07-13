@@ -32,7 +32,7 @@ const submitInput = document.querySelector("#register-submit");
 /* --- Table list reference --- */
 
 // code here...
-const userList = document.getElementById("user-list");
+const userList = document.querySelector("#user-list");
 
 
 
@@ -48,6 +48,17 @@ const userList = document.getElementById("user-list");
     Event Listenters and Interactivity
 ---------------------------------------------------- */
 
+const registerUserHandler = () => {
+    document.querySelector(".register").style.display = "block";
+    document.querySelector(".users").style.display = "none";
+}
+registerUserButton.addEventListener("click", registerUserHandler);
 
-document.addEventListener("click", viewUserListHandler);
-const viewUserListHandler = 
+
+
+const ViewUserHandler = () => {
+    document.querySelector(".users").style.display = "block";
+    document.querySelector(".register").style.display = "none";
+}
+
+viewUserListButton.addEventListener("click", ViewUserHandler);

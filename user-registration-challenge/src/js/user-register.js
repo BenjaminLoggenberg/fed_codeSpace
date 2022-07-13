@@ -48,17 +48,52 @@ const userList = document.querySelector("#user-list");
     Event Listenters and Interactivity
 ---------------------------------------------------- */
 
+//question 1: querySelector vs getElementById
+//question 2: why doesn't the rest of the page toggle but the button only?
+
 const registerUserHandler = () => {
-    document.querySelector(".register").style.display = "block";
-    document.querySelector(".users").style.display = "none";
+    let registerElements = document.querySelectorAll(".register");
+    registerElements.forEach(element => {
+        element.style.display = "block";
+
+    });
+
+
+    let userElements = document.querySelectorAll(".users");
+    userElements.forEach(element => {
+        element.style.display = "none";
+
+    });
+
+    // document.querySelectorAll(".users").style.display = "none";
 }
 registerUserButton.addEventListener("click", registerUserHandler);
 
 
 
-const ViewUserHandler = () => {
-    document.querySelector(".users").style.display = "block";
-    document.querySelector(".register").style.display = "none";
-}
+const viewUserHandler = () => {
+    let registerElements = document.querySelectorAll(".register");
+    registerElements.forEach(element => {
+        element.style.display = "none";
 
-viewUserListButton.addEventListener("click", ViewUserHandler);
+    });
+
+
+    let userElements = document.querySelectorAll(".users");
+    userElements.forEach(element => {
+        element.style.display = "block";
+
+    });
+
+    // document.querySelectorAll(".users").style.display = "none";
+}
+viewUserListButton.addEventListener("click", viewUserHandler);
+
+
+
+// const ViewUserHandler = () => {
+//     document.querySelectorAll(".users").style.display = "block";
+//     document.querySelectorAll(".register").style.display = "none";
+// }
+
+// viewUserListButton.addEventListener("click", ViewUserHandler);

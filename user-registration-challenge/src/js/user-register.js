@@ -51,6 +51,9 @@ const userList = document.querySelector("#user-list");
 //question 1: querySelector vs getElementById
 //question 2: why doesn't the rest of the page toggle but the button only?
 
+
+//FIXED!! HOW TO SWAP DISPLAYS USING BLOCK AND NONE STYLING ON ONE SCREEN: 
+
 const registerUserHandler = () => {
     let registerElements = document.querySelectorAll(".register");
     registerElements.forEach(element => {
@@ -65,7 +68,7 @@ const registerUserHandler = () => {
 
     });
 
-    // document.querySelectorAll(".users").style.display = "none";
+ 
 }
 registerUserButton.addEventListener("click", registerUserHandler);
 
@@ -85,15 +88,9 @@ const viewUserHandler = () => {
 
     });
 
-    // document.querySelectorAll(".users").style.display = "none";
+
 }
 viewUserListButton.addEventListener("click", viewUserHandler);
 
 
 
-// const ViewUserHandler = () => {
-//     document.querySelectorAll(".users").style.display = "block";
-//     document.querySelectorAll(".register").style.display = "none";
-// }
-
-// viewUserListButton.addEventListener("click", ViewUserHandler);

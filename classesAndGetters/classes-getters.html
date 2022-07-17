@@ -26,11 +26,11 @@
     //Add your code below
 
     class Tasks {
-        constructor(privateVar) {
-            this._taskName = privateVar;
+        constructor(task) {
+            this._task = task;
         }
-        get privateVar() {
-            return this._taskName;
+        get task() {
+            return this._task;
         }
     }
 
@@ -41,7 +41,7 @@
     //console.log(myObject.task)
     //Add your code below
     const myObject = new Tasks('whatsup');
-    console.log(myObject.privateVar);
+    console.log(myObject.task);
 
 </script>
 

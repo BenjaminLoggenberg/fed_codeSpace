@@ -12,19 +12,27 @@
     <!-- Create a simple form without an action and a method attribute -->
     <!-- Within your form, create an input with a type of text and submit -->
     <!-- Add your code below -->
-    <form>  
+    <form>
         <input type="text" placeholder="input here">
         <button>Submit</button>
     </form>
 
-  </body>
-  <script>
+</body>
+<script>
     //Create a class called Tasks
     //Make sure your class has a constructor with a private variable
     //Within your Constructor, make sure you have a parameter of task which is equal to a private variable in your constructor
     //Create a getter that returns the variable within your constructor
     //Add your code below
-    
+
+    class Tasks {
+        constructor(privateVar) {
+            this._taskName = privateVar;
+        }
+        get privateVar() {
+            return this._taskName;
+        }
+    }
 
     //Instantiate your Task class and store the object in a variable
     //Console log your Tasks object, by calling the getter
@@ -34,5 +42,6 @@
     //Add your code below
 
 
-  </script>
+</script>
+
 </html>

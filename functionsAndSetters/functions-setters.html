@@ -12,12 +12,12 @@
 
     <form onsubmit="newTask(event)">
         <!-- Add an id of 'task' to your text input -->
-        <input type="text">
+        <input type="text" id="task">
         <input type="submit">
     </form>
     <!-- Create a an empty paragraph element with an id of "text" -->
     <!-- Add your code below -->
-
+    <p id="text"></p>
 </body>
 <script>
 
@@ -27,6 +27,8 @@
         constructor(task) {
             //edit your private variable to be equal to a value of null
             //Add your code below
+            this._task = null;
+
         }
 
         get task() {
@@ -38,7 +40,14 @@
         //If the condition is true, set your private variable to be equal to the parameter given
         //if the condition is false, console log an error message in the form of a string e.g. console.log("This shouldn't be a number")
         //Add your code below
-
+        set task.text {
+        if (typeof task !== 'number') {
+            this._task = text;
+        }
+        else {
+            console.log("This shouldn't be a number");
+        }
+    }
 
     }
     //Edit the instatiation of your class to not include an argument

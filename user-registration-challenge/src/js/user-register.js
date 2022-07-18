@@ -42,10 +42,21 @@ const userList = document.querySelector("#user-list");
 
 // code here...
 
+let users = [];
 
-
+function createUser() {
+    let newUser = {
+        'firstname': document.getElementById('firstname').value;
+        'lastname': document.getElementById('lastname').value;
+        'username': document.getElementById('username').value;
+        'email': document.getElementById('email').value;
+        'password': document.getElementById('password').value;
+    }
+    users.push(newUser);
+}
+console.log(users);
 /* ----------------------------------------------------
-    Event Listenters and Interactivity
+    Event Listeners and Interactivity
 ---------------------------------------------------- */
 
 //question 1: querySelector vs getElementById
@@ -68,7 +79,7 @@ const registerUserHandler = () => {
 
     });
 
- 
+
 }
 registerUserButton.addEventListener("click", registerUserHandler);
 

@@ -42,19 +42,44 @@ const userList = document.querySelector("#user-list");
 
 // code here...
 
+//How to capture, process and push data to user list:
+//create empty array called users:
 let users = [];
 
+
+//create function called createUser and inside a variable object. Push the inputs values to the object.
 function createUser() {
-    let newUser = {
-        'firstname': document.getElementById('firstname').value;
-        'lastname': document.getElementById('lastname').value;
-        'username': document.getElementById('username').value;
-        'email': document.getElementById('email').value;
-        'password': document.getElementById('password').value;
-    }
+    const newUser = {}
+    newUser.firstname = 'firstNameInput';
+    newUser.lastname = 'lastNameInput';
+    newUser.username = 'userNameInput';
+    newUser.email = 'emailInput';
+    newUser.password = 'passwordInput';
     users.push(newUser);
+    return newUser;
 }
-console.log(users);
+
+function createUserElement(user) {
+    const htmlEntryHeader = document.createElement('li').className = 'entry';
+    const mockEntry = document.getElementsByClassName('entry');
+    document.body.insertBefore(htmlEntryHeader, mockEntry);
+
+    const firstnameSpan = document.createElement('span').innerHTML = newUser.firstname;
+    htmlEntryHeader.appendChild(firstnameSpan);
+
+    const lastnameSpan = document.createElement('span').innerHTML = newUser.lastname;
+    htmlEntryHeader.appendChild(lastnameSpan);
+
+    const usernameSpan = document.createElement('span').innerHTML = newUser.username;
+    htmlEntryHeader.appendChild(usernameSpan);
+
+    const emailSpan = document.createElement('span').innerHTML = newUser.email;
+    htmlEntryHeader.appendChild(emailSpan);
+
+    const passwordSpan = document.createElement('span').innerHTML = newUser.password;
+    htmlEntryHeader.appendChild(passwordSpan);
+
+}
 /* ----------------------------------------------------
     Event Listeners and Interactivity
 ---------------------------------------------------- */

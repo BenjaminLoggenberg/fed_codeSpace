@@ -59,7 +59,7 @@ function createUser() {
     return newUser;
 }
 
-function createUserElement(user) {
+function createUserElement(users) {
     const htmlEntryHeader = document.createElement('li').className = 'entry';
     const mockEntry = document.getElementsByClassName('entry');
     document.body.insertBefore(htmlEntryHeader, mockEntry);
@@ -80,6 +80,8 @@ function createUserElement(user) {
     htmlEntryHeader.appendChild(passwordSpan);
 
 }
+
+createUserElement(users)
 /* ----------------------------------------------------
     Event Listeners and Interactivity
 ---------------------------------------------------- */

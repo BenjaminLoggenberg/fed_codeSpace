@@ -21,19 +21,22 @@
         }
         set taskTitle(text) {
             if (isNaN(text)) {
-                this._todos = text;
+                this._todos.push(text);
             } else {
                 console.log('You must assign a string to your task title');
             }
         }
+
         //Add a method called addTasks with a parameter of taskName
-        //create a variable within this function that adds the value of the parameter method into the returned array of the task getter
+        //create a variable within this function that adds the value of the method parameter into the returned array of the task getter
         addTask = (taskName) => {
-            const parameterValue = task.push(taskName);
-            return taskName;
+            this.taskTitle = taskName;
         }
+
     }
-    const object = new Tasks()
+
+    const myTasks = new Tasks(text);
+    console.log(myTasks);
 
     function newTask(event) {
         event.preventDefault();
@@ -42,10 +45,11 @@
 
         //Call the addTask method and set it's argument to the "value" variable provided above
         //Add your code below
-        addTask.call('value');
+        //addTask.call('value');
+        myTasks.addTask(value);
         //Output your object getter of task as an innerHtml of your empty p element
         //Add your code below
-        document.getElementById('text').innerHTML = task;
+        document.getElementById('text').innerHTML = myTasks.task;
     }
 </script>
 

@@ -57,6 +57,37 @@
 
         // Using the 'todo' object, console.log the description property
         console.log(todo.description());
+
+
+
+        // Create an Object Constructor called "Task"
+        // Within your object parameters add the parameter values of: 'title', 'description', 'date_created', 'date_due', 'tagname'
+        // Within your object create private variables that are set to the same name as the parameter values above
+        // Have your private variables equal to the respective parameters they have been named after
+        // e.g. this.description = description
+        function Task(title, description, date_created, date_due, tagname) {
+            this.title = title;
+            this.description = description;
+            this.date_created = date_created;
+            this.tagname = tagname;
+        }
+
+        // Using the code below, declare a variable of 'todo' and have it equal to an instantiation of the Object Below
+        // Your 'todo' variable should now be equal to an object which allows you to use concatenation on it.
+        // To avoid confusion, going forward we are going to refer to the 'todo' variable as an object
+        let todos = new Task('Head to Gym', '', 2018 - 04 - 24, 2020 - 12 - 06, ['exercise', 'fitness', ' routines'])
+
+        // Using the 'todo' object declared above:
+        // Console.log the private variable 'title' from your Task Object. It should display the value 'Head to Gym'.
+        // Feel free to try and console.log all your other private variables declared within the Task Object
+
+        console.log(todos.title)
+        //Add a prototype of 'completed' to the Task object and set it to a boolean value of 'true'
+        //Console.log this prototype value, by using the 'todo' object
+
+        Task.prototype.completed = true;
+        console.log(todos.completed);
+
     </script>
 </body>
 

@@ -14,20 +14,90 @@
 
 
     <script>
+
+        // USING FETCH API TO GET DATA
+        // fetch('https://jsonplaceholder.typicode.com/todos/', {
+        //     method: 'GET',
+
+        // })
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         console.log('Success:', data);
+        //     })
+        //     .catch((error) => {
+        //         console.error('Error:', error);
+        //     });
+
+
+
+        //USING FETCH API TO PATCH DATA
+
+        // const data = {
+        //     "userId": 1,
+        //     "id": 1,
+        //     "title": "Go Sleep",
+        //     "completed": true
+        // }
+        // fetch('https://jsonplaceholder.typicode.com/todos/', {
+        //     method: 'PATCH',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(data),
+        // })
+
+
+
+        // //USING FETCH API TO PUT DATA
+
+        // const data = {
+
+        //     "title": "Go Sleep",
+        //     "completed": true
+        // }
+        // fetch('https://jsonplaceholder.typicode.com/todos/10', {
+        //     method: 'PUT',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(data),
+        // })
+
+
+
+
+        //USING FETCH API TO PUT DATA
+
+        // const data = {
+
+        //     "title": "Go Sleep",
+        //     "completed": true
+        // }
+        // fetch('https://jsonplaceholder.typicode.com/todos/10', {
+        //     method: 'PUT',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(data),
+        // })
+
+
+
+        //USING FETCH API TO POST DATA
+
+        const data = {
+
+            "title": "Go Sleep",
+            "completed": true
+        }
         fetch('https://jsonplaceholder.typicode.com/todos/', {
-            method: 'GET',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data),
         })
-            // .then(response => response.json())
-            // .then(data => {
-            //     console.log('Success:', data);
-            // })
-            // .catch((error) => {
-            //     console.error('Error:', error);
-            // });
+
 
     </script>
 </body>
